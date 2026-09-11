@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahore High Court Advocate & E-Stamp Services</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Header & Navigation */
+        header {
+            background: #0f172a;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f59e0b;
+        }
+        .logo span {
+            color: #fff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f59e0b;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f59e0b;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+        .btn {
+            background: #f59e0b;
+            color: #0f172a;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #d97706;
+            color: #fff;
+        }
+
+        /* Services Section */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: 0.3s;
+            border-top: 4px solid #f59e0b;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+        .card i {
+            font-size: 3rem;
+            color: #0f172a;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        /* About Section */
+        .about {
+            background: #e2e8f0;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .contact-info {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .contact-info i {
+            color: #f59e0b;
+            margin-right: 10px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+        }
+        .whatsapp-float span {
+            font-size: 1rem;
+            font-weight: bold;
+            display: none;
+        }
+        @media(min-width: 768px) {
+            .whatsapp-float span {
+                display: inline;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Advocate <span>Office</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Lahore High Court Advocate & Legal Services</h1>
+        <p>Expert legal representation in Civil, Criminal, Family cases, and reliable assistance with E-Stamp Papers in Lahore.</p>
+        <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20want%20to%20consult%20regarding%20legal%20services." class="btn" target="_blank"><i class="fab fa-whatsapp"></i> Consult on WhatsApp</a>
+    </section>
+
+    <!-- Services Section -->
+    <div id="services" class="container">
+        <h2 class="section-title">Our Legal & E-Stamp Services</h2>
+        <div class="services-grid">
+            <div class="card">
+                <i class="fas fa-balance-scale"></i>
+                <h3>High Court Litigation</h3>
+                <p>Expert handling of Writ Petitions, Civil appeals, Criminal bails, and constitutional matters in Lahore High Court.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-file-contract"></i>
+                <h3>E-Stamp Papers</h3>
+                <p>Quick issuance, guidance, and verification of Judicial and Non-Judicial E-Stamp Papers according to Punjab government rules.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-gavel"></i>
+                <h3>Civil & Criminal Cases</h3>
+                <p>Comprehensive legal counsel and representation in all types of trial court and appellate matters.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Family & Property Law</h3>
+                <p>Resolution of family disputes, Nikah/Khula matters, property documentation, and title suits.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Senior Advocate</h2>
+        <p>Practicing at the Lahore High Court with years of extensive experience in handling complex legal cases. Dedicated to upholding justice, protecting clients' rights, and providing transparent, trustworthy legal consultancy along with hassle-free E-Stamp paper facilitation.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Office Near Lahore High Court, Lahore, Pakistan</p>
+            <p><i class="fas fa-phone-alt"></i> Phone / WhatsApp: +92 300 1234567</p>
+            <p><i class="fas fa-envelope"></i> Email: lawyer@example.com</p>
+        </div>
+        <a href="https://wa.me/923001234567" class="btn" target="_blank">Book Appointment Now</a>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20need%20help%20with%20E-Stamp%20/%20Legal%20work." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with Lawyer</span>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lahore High Court Advocate Office. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
